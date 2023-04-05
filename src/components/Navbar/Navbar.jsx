@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState, useEffect } from "react";
 import "./Navbar.scss";
 import { Row, Col, Typography } from "antd";
 import {
@@ -16,8 +16,21 @@ import Sidebar from "../SideBar/SideBar";
 
 const Navbar = () => {
   const [show, setShow] = useState(false);
+  const [stickyMenu, setStickyMenu] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+  // sticky
+  useEffect(() => {
+    const stickyMenuBar = () => {
+      if (window.scrollY > 80) {
+        setStickyMenu(true);
+      } else {
+        setStickyMenu(false);
+      }
+    };
+    window.addEventListener("scroll", stickyMenuBar);
+  }, []);
+  console.log(stickyMenu);
   return (
     <>
       <header className="header">
@@ -46,7 +59,7 @@ const Navbar = () => {
             </Row>
           </Row>
         </Row>
-        <Row className="menu__area">
+        <Row className={stickyMenu ? "menu__area sticky_menu" : "menu__area"}>
           <Col className="menu__area-container menu__wrapper">
             <Row className="menu__row">
               <Col xl={6} lg={6} md={12} span={12} className="menu__logo-wrap">

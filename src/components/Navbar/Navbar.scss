@@ -284,7 +284,19 @@ button:focus:not(:focus-visible) {
     }
   }
 }
-
+//sticky menu
+.sticky_menu {
+  -webkit-animation: fadeInDown .8s ease-in-out 0s 1 normal none running;
+  animation: fadeInDown .8s ease-in-out 0s 1 normal none running;
+  background: #fff;
+  box-shadow: 0 0 10px 3px rgba(0,0,0,.05);
+  left: 0;
+  position: fixed;
+  top: 0;
+  transition: all .3s ease-out 0s;
+  width: 100%;
+  z-index: 9999999;
+}
 //Off canvas
 .offcanvas {
   bottom: 0;
