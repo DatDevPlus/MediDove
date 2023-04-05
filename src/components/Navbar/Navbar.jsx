@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-has-content, jsx-a11y/anchor-is-valid */
 import React, { useState, useEffect } from "react";
 import "./Navbar.scss";
 import { Row, Col, Typography } from "antd";
@@ -64,7 +65,7 @@ const Navbar = () => {
               <Col xl={6} lg={6} md={12} span={12} className="menu__logo-wrap">
                 <Row className="logo logo__circle">
                   <a href="/">
-                    <img src="https://medi-dove.netlify.app/img/logo/logo.png" />
+                    <img src="https://medi-dove.netlify.app/img/logo/logo.png" alt="" />
                   </a>
                 </Row>
               </Col>
@@ -88,7 +89,7 @@ const Navbar = () => {
                         <DownOutlined />
                       </span>
                     </Col>
-                    <ul className="header__lang-list">
+                    <ul class="header__lang-list">
                       <li>
                         <a href="#">USA</a>
                       </li>

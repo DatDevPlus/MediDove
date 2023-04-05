@@ -1,12 +1,13 @@
 import React from 'react';
-import OurTeam from '../components/OurTeam/OurTeam';
-
+import Navbar from '../components/Navbar/Navbar.jsx'
+import Footer from '../components/Footer/Footer.jsx'
 
 const HomePage = () => {
   return (
-   <>
-    <OurTeam/>
-   </>
+    <>
+      <Navbar />
+      <Footer />
+    </>
   )
 }
 
