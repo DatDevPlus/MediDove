@@ -6,12 +6,12 @@ import { MailOutlined, GlobalOutlined, FlagOutlined } from "@ant-design/icons";
 const HomeFooter = () => {
   return (
     <>
-      <footer>
-        <div className="footer-top primary-bg pt-115 pb-90">
+      <footer className="home-footer">
+        <div className="footer-top primary-bg">
           <div className="container">
             <div className="row">
               <div className="col-xl-5 col-lg-6 col-md-8">
-                <div className="footer-contact-info mb-30">
+                <div className="footer-contact-info ">
                   <div className="emmergency-call fix">
                     <div className="emmergency-call-icon f-left">
                       <i className="fas fa-phone"></i>
@@ -21,7 +21,7 @@ const HomeFooter = () => {
                       <span>202-555-0104</span>
                     </div>
                   </div>
-                  <div className="footer-logo mb-35">
+                  <div className="footer-logo ">
                     <Link to="/">
                       <img
                         src="https://medi-dove.netlify.app/img/logo/footer-logo.png"
@@ -29,7 +29,7 @@ const HomeFooter = () => {
                       />
                     </Link>
                   </div>
-                  <div className="footer-contact-content mb-25">
+                  <div className="footer-contact-content">
                     <p>
                       Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                       sed do eiusmod tempor incididunt ut labore et dolore magna
@@ -56,7 +56,7 @@ const HomeFooter = () => {
                 </div>
               </div>
               <div className="col-xl-2 offset-xl-1 col-lg-3 col-md-4">
-                <div className="footer-widget mb-30">
+                <div className="footer-widget">
                   <div className="footer-title">
                     <h3>Departments</h3>
                   </div>
@@ -85,7 +85,7 @@ const HomeFooter = () => {
                 </div>
               </div>
               <div className="col-xl-2 offset-xl-1 col-lg-3 d-md-none d-lg-block">
-                <div className="footer-widget mb-30">
+                <div className="footer-widget">
                   <div className="footer-title">
                     <h3>Quick Links</h3>
                   </div>
@@ -116,7 +116,7 @@ const HomeFooter = () => {
             </div>
           </div>
         </div>
-        <div className="footer-bottom pt-25 pb-20">
+        <div className="footer-bottom">
           <div className="container">
             <div className="row">
               <div className="col-xl-12">

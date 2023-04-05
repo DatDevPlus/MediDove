@@ -10,87 +10,89 @@ ul {
   padding: 0;
 }
 p {
-    color: #647589;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 26px;
-    margin-bottom: 15px;
+  color: #647589;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+  margin-bottom: 15px;
 }
-.footer-top {
-  background: #13232f;
-  padding-bottom: 90px;
-  padding-top: 115px;
-  .footer-contact-info {
-    background-color: #fff;
-    border-radius: 16px;
-    box-shadow: 0 16px 32px 0 hsla(0, 0%, 61%, 0.2);
-    margin-top: -226px;
-    padding: 60px 60px 55px;
-    margin-bottom: 30px;
-    .emmergency-call {
-      border-bottom: 2px solid #ebebeb;
-      margin-bottom: 40px;
-      padding-bottom: 25px;
-      .emmergency-call-icon i {
-        color: #e12454;
-        font-size: 36px;
-        margin-right: 30px;
-      }
-      h6 {
-        color: #647589;
-        display: block;
-        font-weight: 400;
-        margin-bottom: 0;
-      }
-      span {
-        color: #13232f;
-        font-size: 36px;
-        font-weight: 500;
-      }
-    }
-    .footer-logo {
-      margin-bottom: 35px;
-      .footer-contact-content {
-        margin-bottom: 25px;
-      }
-    }
-    .footer-emailing ul li {
-      color: #647589;
-      font-size: 18px;
-      margin-bottom: 12px;
-      .i{
-        margin-right: 14px;
-      }
-    }
-  }
-  .footer-widget {
-    margin-bottom: 30px;
-    .footer-title h3 {
-      color: #fff;
-      display: block;
-      font-size: 24px;
-      margin-bottom: 46px;
-    }
-    .footer-menu ul li {
+.home-footer {
+  .footer-top {
+    background: #13232f;
+    padding-bottom: 90px;
+    padding-top: 115px;
+    .footer-contact-info {
+      background-color: #fff;
+      border-radius: 16px;
+      box-shadow: 0 16px 32px 0 hsla(0, 0%, 61%, 0.2);
+      margin-top: -226px;
+      padding: 60px 60px 55px;
       margin-bottom: 30px;
-      a {
-        color: #899dab;
-        font-weight: 500;
+      .emmergency-call {
+        border-bottom: 2px solid #ebebeb;
+        margin-bottom: 40px;
+        padding-bottom: 25px;
+        .emmergency-call-icon i {
+          color: #e12454;
+          font-size: 36px;
+          margin-right: 30px;
+        }
+        h6 {
+          color: #647589;
+          display: block;
+          font-weight: 400;
+          margin-bottom: 0;
+        }
+        span {
+          color: #13232f;
+          font-size: 36px;
+          font-weight: 500;
+        }
+      }
+      .footer-logo {
+        margin-bottom: 35px;
+        .footer-contact-content {
+          margin-bottom: 25px;
+        }
+      }
+      .footer-emailing ul li {
+        color: #647589;
+        font-size: 18px;
+        margin-bottom: 12px;
+        .i {
+          margin-right: 14px;
+        }
+      }
+    }
+    .footer-widget {
+      margin-bottom: 30px;
+      .footer-title h3 {
+        color: #fff;
+        display: block;
+        font-size: 24px;
+        margin-bottom: 46px;
+      }
+      .footer-menu ul li {
+        margin-bottom: 30px;
+        a {
+          color: #899dab;
+          font-weight: 500;
+        }
       }
     }
   }
-}
-.footer-bottom {
-  background: #0d1b26;
-  padding-bottom: 20px;
-  padding-top: 25px;
-  .footer-copyright {
-    p {
-      color: #9aacbb;
-      margin: 0;
-    }
-    .white-color {
-      color: #fff !important;
+  .footer-bottom {
+    background: #0d1b26;
+    padding-bottom: 20px;
+    padding-top: 25px;
+    .footer-copyright {
+      p {
+        color: #9aacbb;
+        margin: 0;
+      }
+      .white-color {
+        color: #fff !important;
+      }
     }
   }
 }
