@@ -3,21 +3,21 @@ import './AboutUs.scss';
 
 const AboutUs = () => {
     return (
-        <div className='AboutUs'>
+        <div className='about__us'>
             <div class="container">
-                <div class="row_container">
-                    <div class="col-xl-6 col-lg-5 about_left">
-                        <div class="icon_center">
+                <div class="row__container">
+                    <div class="col-xl-6 col-lg-5 about__left">
+                        <div class="icon__center">
                             <img src="https://medi-dove.netlify.app/img/about/medical-brand-icon-border.png" alt="" /></div>
                         <div class="about-left pos-rel mb-30">
-                            <div class="about_img_left">
+                            <div class="about__img__left">
                                 <img src="https://medi-dove.netlify.app/img/about/about-img.jpg" alt="" /></div>
                             <div class="about-shape">
                                 <img src="https://medi-dove.netlify.app/img/about/about-shape.png" alt="" /></div>
                         </div>
                     </div>
                     <div class="col-xl-6 col-lg-7">
-                        <div class="about_right pt-55 mb-30">
+                        <div class="about__right pt-55 mb-30">
                             <div class="about-title mb-20">
                                 <h5>About Us</h5>
                                 <h1>Short Story About MediDove Clinic.</h1>
