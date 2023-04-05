@@ -1,0 +1,135 @@
+//
+$pink: #e12454;
+$black: #223645;
+$dark_grey: #647589;
+
+//
+@mixin text-custom ($font_family, $font_size, $font_weight) {
+    font-family: $font_family, sans-serif;
+    font-size: $font_size;
+    font-weight: $font_weight;
+}
+
+.facility {
+
+    &__area {
+        padding-top: 120px;
+        padding-bottom: 90px;
+    }
+
+    &__container {
+
+        width: 100%;
+
+        @media screen and (min-width: 576px) and (max-width: 767px) {
+            & {
+                max-width: 540px !important;
+            }
+        }
+
+        @media screen and (min-width: 768px) and (max-width: 577px)  {
+            & {
+                max-width: 720px !important;
+            }
+        }
+
+        @media screen and (max-width: 769px) and (min-width: 992px) {
+            & {
+                max-width: 960px !important;
+            }
+        }
+
+        @media screen and (min-width: 1200px) {
+            & {
+                max-width: 1200px !important;
+            }
+        }
+
+        .row {
+        //     --bs-gutter-x: 0;
+        //     --bs-gutter-y: 0;
+        //     display: flex;
+        //     flex-wrap: wrap;
+        //     margin-left: calc(var(--bs-gutter-x)*-.5);
+        //     margin-right: calc(var(--bs-gutter-x)*-.5);
+        //     margin-top: calc(var(--bs-gutter-y)*-1);
+
+            .col-no-padding {
+                padding-left: 0;
+                padding-right: 0;
+            }
+        }
+
+        .section {
+
+            &--left {
+                position: relative;
+                margin-bottom: 50px;
+                text-align: left;
+
+                @media screen and (min-width: 768px) and (max-width: 991px) {
+                    & {
+                        margin-bottom: 0;
+                    }
+                }
+
+                .title {
+
+                    &__image {
+                        position: absolute;
+                        right: 0;
+                        top: -50px;
+                    }
+        
+                    &__wrapper {
+                        position: relative;
+                    }
+        
+                    &--small {
+                        @include text-custom(Rubik, 18px, 500);
+                        color: $pink;
+                        text-transform: uppercase;
+                        margin-bottom: 28px;
+                    }
+        
+                    &--big {
+                        @include text-custom(Poppins, 50px, 600);
+                        color: $black;
+                        line-height: 1.2;
+                        margin-top: 0;
+                        margin-bottom: 18px;
+        
+                        @media screen and (min-width: 768px) and (max-width: 991px) {
+                            & {
+                                font-size: 40px;
+                            }
+                        }
+        
+                        @media screen and (max-width: 767px) {
+                            & {
+                                font-size: 32px;
+                            }
+                        }
+        
+                    }
+                }
+            }
+
+            &--right {
+                margin-bottom: 50px;
+
+                .facility__desc {
+                    @include text-custom(Rubik, 14px, 400);
+                    color: $dark_grey;
+                    line-height: 26px;
+                    padding: 25px 25px 0;
+
+                    @media screen and (max-width: 767px) {
+                        padding-left: 0;
+                        padding-right: 0;
+                    }
+                }
+            }
+        }
+    }
+}

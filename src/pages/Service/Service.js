@@ -1,11 +1,15 @@
-import React from 'react'
-import Breadcrumb from '../../components/Breadcrumb/Breadcrumb'
+import React, { Fragment } from "react";
+import Breadcrumb from "../../components/Breadcrumb/Breadcrumb";
+import HCFacility from "../../components/HCFacility/HCFacility";
 
 const Service = () => {
   const pageName = "Services";
   return (
-    <Breadcrumb pageName={pageName} />
-  )
-}
+    <Fragment>
+      <Breadcrumb pageName={pageName} />
+      <HCFacility />
+    </Fragment>
+  );
+};
 
-export default Service
+export default Service;
