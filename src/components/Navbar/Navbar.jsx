@@ -89,7 +89,7 @@ const Navbar = () => {
                         <DownOutlined />
                       </span>
                     </Col>
-                    <ul class="header__lang-list">
+                    <ul className="header__lang-list">
                       <li>
                         <a href="#">USA</a>
                       </li>
