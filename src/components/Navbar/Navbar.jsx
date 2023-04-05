@@ -30,7 +30,6 @@ const Navbar = () => {
     };
     window.addEventListener("scroll", stickyMenuBar);
   }, []);
-  console.log(stickyMenu);
   return (
     <>
       <header className="header">
@@ -89,7 +88,7 @@ const Navbar = () => {
                         <DownOutlined />
                       </span>
                     </Col>
-                    <ul class="header__lang-list">
+                    <ul className="header__lang-list">
                       <li>
                         <a href="#">USA</a>
                       </li>
@@ -139,7 +138,7 @@ const Navbar = () => {
                     <ul>
                       <li>
                         <a href="/">Home +</a>
-                        <ul class="submenu">
+                        <ul className="submenu">
                           <li>
                             <a href="/">Home style 1</a>
                           </li>
@@ -147,7 +146,7 @@ const Navbar = () => {
                       </li>
                       <li>
                         <a href="/services">Department +</a>
-                        <ul class="submenu">
+                        <ul className="submenu">
                           <li>
                             <a href="/services">Services 01</a>
                           </li>
@@ -158,7 +157,7 @@ const Navbar = () => {
                       </li>
                       <li>
                         <a href="/doctors">Doctors +</a>
-                        <ul class="submenu">
+                        <ul className="submenu">
                           <li>
                             <a href="/doctors">Doctors 01</a>
                           </li>
@@ -169,7 +168,7 @@ const Navbar = () => {
                       </li>
                       <li>
                         <a href="/shop">Shop</a>
-                        <ul class="submenu">
+                        <ul className="submenu">
                           <li>
                             <a href="/shop">Shop Page</a>
                           </li>
@@ -180,7 +179,7 @@ const Navbar = () => {
                       </li>
                       <li>
                         <a href="/blogs">News +</a>
-                        <ul class="submenu">
+                        <ul className="submenu">
                           <li>
                             <a href="/blogs">Blog Right Sidebar</a>
                           </li>
@@ -191,7 +190,7 @@ const Navbar = () => {
                       </li>
                       <li>
                         <a href="#">Pages +</a>
-                        <ul class="submenu">
+                        <ul className="submenu">
                           <li>
                             <a href="/about">About</a>
                           </li>
