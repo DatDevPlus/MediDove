@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css?family=Rubik:300,400,500,600,700,800");
+@import url("https://fonts.googleapis.com/css?family=Poppins:600");
+
+//Colors
+$dark-grey: #647589;
+$bright-grey: #95a3b3;
+$black: #223645;
+$pink: #e12454;
+
+//
+@mixin text-custom ($font_family, $font_size, $font_weight) {
+    font-family: $font_family, sans-serif;
+    font-size: $font_size;
+    font-weight: $font_weight;
+}
+
+
+.breadcrumb {
+
+    &__section {
+        background-position: 50%;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        padding-top: 200px;
+        padding-bottom: 180px;
+
+        @media screen and (min-width: 992px) and (max-width: 1200px) {
+            & {
+                padding: 100px 0;
+            }
+        }
+
+        @media screen and (min-width: 768px) and (max-width: 991px) {
+            & {
+                padding: 100px 0;
+            }
+        }
+
+        @media screen and (max-width: 767px) {
+            & {
+                padding-bottom: 150px;
+                padding-top: 130px;
+            }
+        }
+    }
+        
+    &__container {
+
+        width: 100%;
+
+        @media screen and (min-width: 576px) and (max-width: 767px) {
+            & {
+                max-width: 540px !important;
+            }
+        }
+
+        @media screen and (min-width: 768px) and (max-width: 577px)  {
+            & {
+                max-width: 720px !important;
+            }
+        }
+
+        @media screen and (max-width: 769px) and (min-width: 992px) {
+            & {
+                max-width: 960px !important;
+            }
+        }
+
+        @media screen and (min-width: 1200px) {
+            & {
+                max-width: 1200px !important;
+            }
+        }
+    }  
+    
+    &__title {
+
+        .title {
+
+            &--small {
+                @include text-custom(Rubik, 18px, 500);
+
+                color: $dark-grey;
+
+                padding-bottom: 15px;
+
+                @media screen and (max-width: 767px) {
+                    & {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+
+            &--big {
+                @include text-custom(Poppins, 60px, 600);
+                color: $black;
+
+                margin-top: 0;
+
+                @media screen and (min-width: 768px) and (max-width: 991px) {
+                    & {
+                        font-size: 42px;
+                    }
+                }
+
+                @media screen and (max-width: 767px) {
+                    & {
+                        font-size: 35px;
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+    &__wrapper {
+
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        
+        @media screen and (min-width: 768px) {
+            justify-content: flex-end;
+        }
+
+        .breadcrumb {
+
+            @include text-custom(Rubik, 14px, 400);
+            background-color: transparent;
+            padding: 0;
+
+            ol {
+                background: 0;
+                margin: 0;
+                padding: 0;
+            }
+
+            &__item {
+                list-style: none;
+                font-weight: 500;
+
+                a, a:hover {
+                    color: $bright-grey;
+                    text-decoration: none;
+                }
+
+                &.active {
+                    color: $pink;
+                }
+
+                &:not(:first-child) {
+                    padding-left: 0.5rem;
+
+                    &::before {
+                        content: "|"; 
+                        color: $dark-grey;
+                        float: left;
+                        padding-right: 0.5rem;
+                    }
+                }
+            }
+        }
+    }
+}
