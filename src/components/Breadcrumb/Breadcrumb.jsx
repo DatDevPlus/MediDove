@@ -1,5 +1,6 @@
 import React from "react";
 import "./Breadcrumb.scss";
+import PropTypes from "prop-types";
 
 const Breadcrumb = (props) => {
 
@@ -33,5 +34,9 @@ const Breadcrumb = (props) => {
     </section>
   );
 };
+
+Breadcrumb.propTypes = {
+  pageName: PropTypes.string,
+}
 
 export default Breadcrumb;

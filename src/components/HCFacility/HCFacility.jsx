@@ -1,5 +1,7 @@
 import React from 'react';
 import "./HCFacility.scss";
+import ServiceCard from './ServiceCard';
+import service_cards_list from './ServiceCardsList';
 
 const HCFacility = () => {
 
@@ -24,11 +26,16 @@ const HCFacility = () => {
               </div>
             </div>
           </div>
-          <div className="col-xl-6 col-lg-6 col-md-12">
+          <div className="col-xl-6 col-lg-6 col-md-12 col-no-padding">
             <div className="section--right">
               <p className="facility__desc">{facility_desc}</p>
             </div>
           </div>
+        </div>
+        <div className="row">
+          {service_cards_list.map((item, index) => 
+          <ServiceCard key={index} image={item.image} name={item.name} desc={item.desc} />
+          )}
         </div>
       </div>
     </section>
