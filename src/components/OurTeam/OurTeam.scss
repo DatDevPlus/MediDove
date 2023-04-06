@@ -1,0 +1,222 @@
+.our__team {
+    padding-bottom: 55px;
+    padding-top: 115px;
+
+    .container {
+        .wrap__ourteam {
+            --bs-gutter-x: 1.5rem;
+            --bs-gutter-y: 0;
+            display: flex;
+            flex-wrap: wrap;
+            margin-left: calc(var(--bs-gutter-x)*-.5);
+            margin-right: calc(var(--bs-gutter-x)*-.5);
+            margin-top: calc(var(--bs-gutter-y)*-1);
+
+            .pos-rel {
+                position: relative;
+            }
+
+            .mb-75 {
+                margin-bottom: 75px;
+
+                .section__icon {
+                    .section__back__icon {
+                        left: 0;
+                        margin: auto;
+                        position: absolute;
+                        right: 0;
+                        top: -50px;
+                    }
+
+                    .back__icon__left {
+                        margin: 0;
+                    }
+                }
+
+                .big__text {
+                    .text__1 {
+                        margin-bottom: 28px;
+                        color: #647589;
+                        font-family: Rubik, sans-serif;
+                        font-size: 18px;
+                        font-weight: 500;
+                    }
+
+                    .text__2 {
+                        line-height: 1.2;
+                        margin-bottom: 18px;
+                        font-size: 60px;
+                        letter-spacing: -.3px;
+                        color: #223645;
+                        font-family: Poppins, sans-serif;
+                        font-weight: 600;
+                    }
+                }
+
+                .pos__rel {
+                    position: relative;
+                }
+
+            }
+
+            .pt__80 {
+                padding-top: 80px;
+                text-align: end;
+
+                .btn-icon {
+                    background-color: #e12454;
+                    border-radius: 30px;
+                    box-shadow: 0 8px 16px 0 rgba(225, 36, 84, .2);
+                    padding: 24px 50px 22px 84px;
+
+
+
+
+                }
+
+                .primary_btn {
+                    background: #e12454;
+                    border: none;
+                    color: #fff;
+                    cursor: pointer;
+                    display: inline-block;
+                    font-size: 14px;
+                    font-weight: 500;
+                    letter-spacing: 1px;
+                    line-height: 1;
+                    margin-bottom: 0;
+                    position: relative;
+                    text-align: center;
+                    text-transform: uppercase;
+                    touch-action: manipulation;
+                    transition: all .3s ease 0s;
+                    vertical-align: middle;
+                    white-space: nowrap;
+                    text-decoration: none;
+                }
+
+                .primary_btn:hover {
+                    background: #8fb569;
+                    text-decoration: none;
+                }
+            }
+
+            .btn-icon span {
+                background: #fff;
+                border-radius: 100%;
+                color: #223645;
+                font-size: 20px;
+                font-weight: 600;
+                height: 50px;
+                left: 5px;
+                line-height: 50px;
+                position: absolute;
+                text-align: center;
+                top: 5px;
+                transition: .3s;
+                width: 50px;
+            }
+
+            .btn-icon:hover {
+                background-color: #8fb569;
+                box-shadow: 0 8px 16px 0 rgba(125, 178, 73, .2);
+                color: #fff;
+            }
+        }
+
+    }
+
+    .row {
+        --bs-gutter-x: 1.5rem;
+        --bs-gutter-y: 0;
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: calc(var(--bs-gutter-x)*-.5);
+        margin-right: calc(var(--bs-gutter-x)*-.5);
+        margin-top: calc(var(--bs-gutter-y)*-1);
+
+        .mb-60 {
+            margin-bottom: 60px;
+        }
+
+        .text-center {
+            text-align: center !important;
+
+            .pos-rel {
+                position: relative;
+            }
+
+            .mb-45 {
+                margin-bottom: 45px;
+                
+
+                .member__image {
+                    max-width: 100%;
+                    transition: all .3s ease-out 0s;
+                    vertical-align: middle;
+                }
+
+                .team__link {
+                    background-color: #8fb569;
+                    border-radius: 50%;
+                    bottom: 25px;
+                    box-shadow: 0 8px 16px 0 hsla(90, 34%, 56%, .3);
+                    color: #fff;
+                    display: inline-block;
+                    font-size: 26px;
+                    font-weight: 600;
+                    height: 60px;
+                    line-height: 60px;
+                    position: absolute;
+                    right: 51px;
+                    width: 60px;
+                    transition: all .3s ease-out 0s;
+                }
+
+                .team__link:hover {
+                    background-color: #e12454;
+                    box-shadow: 0 8px 16px 0 rgba(225, 36, 84, .2);
+                    color: #fff;
+                    text-decoration: none;
+                    transition: all .3s ease-out 0s;
+                }
+            }
+
+            .content__member {
+                .member {
+                    &__position {
+                        color: #e12454;
+                        letter-spacing: 1px;
+                        text-transform: uppercase;
+                        font-size: 14px;
+                    }
+
+                    &__name {
+                        margin-bottom: 17px;
+                        font-size: 26px;
+                        letter-spacing: -.3px;
+                    }
+                }
+
+            }
+
+
+
+        }
+    }
+
+}
+
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1200px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .col-xl-6 {
+        flex: 0 0 auto;
+        width: 50%;
+    }
+}
