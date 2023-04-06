@@ -21,4 +21,20 @@ $white: #fff;
         width: 100%;
         margin-bottom: 40px;
     }
+
+    .ant-input {
+        margin-right: 0px !important;
+        line-height: 70px;
+    }
+      
+    input {
+        height: 70px;
+        padding-left: 38px !important;
+        border: 2px solid #eee7ff !important;
+    }
+      
+    .anticon {
+        font-size: 16px;
+        margin-right: 30px;
+    }
 }

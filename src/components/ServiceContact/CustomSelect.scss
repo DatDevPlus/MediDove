@@ -2,9 +2,15 @@ $baby-blue: #d3e2f0;
 $baby-pink: #eee7ff;
 $dark_grey: #647589;
 
+@mixin text-custom ($font_family, $font_size, $font_weight) {
+    font-family: $font_family, sans-serif;
+    font-size: $font_size;
+    font-weight: $font_weight;
+}
+
 .ant-select {
-    color: $dark_grey;
-    font-size: 14px;
+    @include text-custom(Rubik, 14px, 400);
+    color: $dark_grey; 
     height: 70px;
     margin-bottom: 15px;
     width: 100%;
@@ -28,17 +34,16 @@ $dark_grey: #647589;
     }
     
     &-arrow {
+        @include text-custom(Rubik, 12px, 400);
+        color: $dark_grey;
         text-transform: none;
-        vertical-align: -0.125em;
-        text-rendering: optimizelegibility;
         position: absolute;
         top: 50%;
-        right: 11px;
+        right: 15px;
         display: flex;
         align-items: center;
         height: 12px;
         margin-top: -6px;
-        font-size: 12px;
         text-align: center;
     }
 }
