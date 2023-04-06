@@ -1,8 +1,16 @@
 //
 $white: #fff;
+$pink: #e12454;
+$green: #8fb569;
 
+@mixin text-custom ($font_family, $font_size, $font_weight) {
+    font-family: $font_family, sans-serif;
+    font-size: $font_size;
+    font-weight: $font_weight;
+}
 
 .contact__form.quote__calculator {
+
     background-color: $white;
 
     .content__wrapper {
@@ -14,27 +22,69 @@ $white: #fff;
                 padding: 25px;
             }
         }
+
+        .ant-form-item {
+            margin-bottom: 0 !important;
+        }
+    }
+
+    .phone__input {
+
+        .ant-input {
+            margin-right: 0px !important;
+            line-height: 70px;
+        }
+          
+        input {
+            height: 70px;
+            
+        }
+          
+        .anticon {
+            font-size: 16px;
+            margin-right: 30px;
+        }
+
+        .ant-input-affix-wrapper:focus, .ant-input-affix-wrapper-focused {
+            box-shadow: 0 0 0 0px rgba(116, 55, 11, 0.2);
+        }
+
+        .ant-form-item-control {
+            padding-left: 38px !important;
+            border: 2px solid #eee7ff !important;
+
+            .ant-input-affix-wrapper {
+                border-style: none !important;
+                padding: 0px !important;
+            }
+        }
     }
 
     .form-submit__button {
 
         width: 100%;
-        margin-bottom: 40px;
-    }
+        @include text-custom(Rubik, 14px, 500);
+        color: $white;
 
-    .ant-input {
-        margin-right: 0px !important;
-        line-height: 70px;
-    }
-      
-    input {
-        height: 70px;
-        padding-left: 38px !important;
-        border: 2px solid #eee7ff !important;
-    }
-      
-    .anticon {
-        font-size: 16px;
-        margin-right: 30px;
+        margin-top: 40px;
+        margin-bottom: 0;
+        
+        background: $pink;
+
+        border: none;
+        border-radius: 0;
+        
+        letter-spacing: 1px;
+        
+        height: 62px;
+
+        padding: 24px 40px;
+        text-align: center;
+        text-transform: uppercase;
+        vertical-align: middle;
+
+        &:hover {
+            background: $green;
+        }
     }
 }
