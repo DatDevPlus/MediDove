@@ -4,6 +4,130 @@
       margin-left: 172px !important;
     }
   }
+  @media only screen and (min-width: 992px) and (max-width:1199px) {
+    .container {
+        .col-xl-7 {
+        margin-left: 15%;
+            .service-details-text{
+                padding-right: 10px;
+            }
+        }
+        .col-xl-5{
+            .service-widget {
+                margin-left: 30%;
+                justify-content: center;
+                min-width: 700px;
+            }
+          }
+
+      }
+     
+ 
+  }
+  @media only screen and (min-width: 768px) and (max-width:992px) {
+    .container {
+        .col-xl-7 {
+        margin-left: 4%;
+            .service-details-text{
+                padding-right: 10px;
+            }
+        }
+        .col-xl-5{
+            .service-widget {
+                margin-left: 4%;
+                justify-content: center;
+                min-width: 700px;
+            }
+          }
+
+      }
+ 
+  }
+  @media only screen and (min-width: 479px) and (max-width:768px) {
+    .container {
+        .col-xl-7 {
+            .section-title{
+                .section-icon{
+                    img{
+                        padding-right: 0px;
+    
+                    }
+                }
+               
+            }
+            .service-details-text{
+                padding-right: 10px;
+                padding-left: 10px;
+            }
+            .download-box {
+                .single-download-inner{
+                    width: 100% !important;
+                    img{
+                        padding: 0px;
+                    }
+                    span{
+                        font-size: 10px;
+                        font-weight: 600;
+                    }
+                    .download-size{
+                        margin: 0px !important;
+                        width: 20px;
+                    }
+                }
+            }
+            .ser-fea-list{
+                margin-left: 5px !important;
+            }
+            .service-doctors{
+                img{
+                    padding-right: 0px;
+
+                }
+            }
+            
+        }
+        .col-xl-5{
+            margin-left: 6%;
+            .service-widget {
+                min-width: 300px;
+            }
+          }
+
+      }
+ 
+  }
+  @media only screen and (max-width:479px) {
+    .container{
+        .col-xl-7{
+            .section-title{
+                .section-icon{
+                    img{
+                        padding-right: 0px;
+    
+                    }
+                }
+               
+            }
+            .service-details-text{
+                padding: 0px;
+            }
+            .ser-fea-list{
+                margin-left: 7px !important;
+                h3{
+                    font-size: 19px;
+                }
+            }
+            .service-doctors{
+                img{
+                    padding-right: 0px;
+    
+                }
+            }
+        }
+       
+    }
+ 
+  }
 
 .service-details-area{
     .col-xl-7 {
