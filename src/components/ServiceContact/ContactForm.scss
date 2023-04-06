@@ -1,0 +1,24 @@
+//
+$white: #fff;
+
+
+.contact__form.quote__calculator {
+    background-color: $white;
+
+    .content__wrapper {
+        background: $white;
+        padding: 60px 60px 0;
+
+        @media (max-width: 767px) {
+            & {
+                padding: 25px;
+            }
+        }
+    }
+
+    .form-submit__button {
+
+        width: 100%;
+        margin-bottom: 40px;
+    }
+}

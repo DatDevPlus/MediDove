@@ -1,0 +1,47 @@
+$baby-blue: #d3e2f0;
+$baby-pink: #eee7ff;
+$dark_grey: #647589;
+
+.ant-select {
+    color: $dark_grey;
+    font-size: 14px;
+    height: 70px;
+    margin-bottom: 15px;
+    width: 100%;
+
+    &-focused:not(.ant-select-disabled).ant-select:not(.ant-select-customize-input) .ant-select-selector {
+        box-shadow: none;
+        border: 2px solid $baby-pink !important;
+    }
+
+    &-selector {
+        height: 70px !important;
+        width: 100%;
+        padding-left: 38px !important;
+        border: 2px solid $baby-blue !important;
+    }
+      
+    &-selection-item {
+        height: 70px !important;
+        display: flex;
+        align-items: center;
+    }
+    
+    &-arrow {
+        text-transform: none;
+        vertical-align: -0.125em;
+        text-rendering: optimizelegibility;
+        position: absolute;
+        top: 50%;
+        right: 11px;
+        display: flex;
+        align-items: center;
+        height: 12px;
+        margin-top: -6px;
+        font-size: 12px;
+        text-align: center;
+    }
+}
+  
+  
+  

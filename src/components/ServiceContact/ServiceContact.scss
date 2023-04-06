@@ -1,0 +1,125 @@
+//
+$black: #223645;
+$light-grey: #b1c5d3;
+$brighter-grey: #b4c8d7;
+$white: #fff;
+
+//
+@mixin text-custom ($font_family, $font_size, $font_weight) {
+    font-family: $font_family, sans-serif;
+    font-size: $font_size;
+    font-weight: $font_weight;
+}
+
+.service-contact__area {
+
+    position: relative;
+    background-repeat: no-repeat;
+
+    padding-bottom: 120px;
+    padding-top: 115px;
+
+    &::before {
+        content: "";
+        background: $black;
+
+        position: absolute;
+
+        width: 100%;
+        height: 100%;
+
+        left: 0;
+        right: 0;
+        top: 0;
+
+        opacity: 0.9;
+    }
+
+    .contact {
+
+        &__container {
+
+            width: 100%;
+
+            @media screen and (min-width: 576px) and (max-width: 767px) {
+                & {
+                    max-width: 540px !important;
+                }
+            }
+
+            @media screen and (min-width: 768px) and (max-width: 577px)  {
+                & {
+                    max-width: 720px !important;
+                }
+            }
+
+            @media screen and (max-width: 769px) and (min-width: 992px) {
+                & {
+                    max-width: 960px !important;
+                }
+            }
+
+            @media screen and (min-width: 1200px) {
+                & {
+                    max-width: 1200px !important;
+                }
+            }
+
+            .title {
+
+                &__area {
+                    position: relative;
+                    margin-bottom: 45px;
+                }
+
+                &__wrapper {
+                    position: relative;
+
+                    .desc--big {
+                        @include text-custom(Rubik, 30px, 400);
+                        color: $brighter-grey;
+
+                        line-height: 42px;
+                        max-width: 680px;
+                        padding-right: 35px;
+                    }
+                }
+
+                &--small {
+                    @include text-custom(Rubik, 16px, 500);
+                    color: $light-grey;
+                    letter-spacing: 2px;
+                    margin-bottom: 25px;
+                    text-transform: uppercase;
+                }
+
+                &--big {
+                    @include text-custom(Poppins, 60px, 600);
+                    color: $white;
+
+                    line-height: 1.2;
+                    margin-bottom: 18px;
+
+                    @media (min-width: 992px) and (max-width: 1200px) {
+                        & {
+                            font-size: 47px;
+                        }
+                    }
+
+                    @media (min-width: 768px) and (max-width: 991px) {
+                        & {
+                            font-size: 53px;
+                        }
+                    }
+                }
+            }
+
+            .button__area {
+                
+                margin-bottom: 30px;
+            }
+
+        }
+    }
+
+}
