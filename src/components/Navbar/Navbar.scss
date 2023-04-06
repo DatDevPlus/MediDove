@@ -405,6 +405,9 @@ button:focus:not(:focus-visible) {
   }
 }
 @media (min-width: 992px) {
+  ul{
+    padding-left: 0 !important;
+  }
   .top__bar-container,
   .menu__area-container {
     max-width: 960px;

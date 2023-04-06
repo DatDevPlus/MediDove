@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { CheckOutlined } from "@ant-design/icons";
+import Breadcrumb from "../../components/Breadcrumb/Breadcrumb";
 
 import {
   AreaChart,
@@ -13,6 +14,8 @@ import {
 } from "recharts";
 import "./ServiceDetail.scss";
 const ServicesDetailsArea = () => {
+  const pageName = "Details";
+
   const data = [
     {
       name: "Page A",
@@ -59,6 +62,7 @@ const ServicesDetailsArea = () => {
   ];
   return (
     <>
+      <Breadcrumb pageName={pageName} />
       <div className="service-details-area pt-120 pb-100">
         <div className="container">
           <div className="row">
