@@ -2,7 +2,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { CheckOutlined } from "@ant-design/icons";
 import Breadcrumb from "../../components/Breadcrumb/Breadcrumb";
-
+import { useEffect, useState } from "react";
+import Navbar from "../../components/Navbar/Navbar";
+import axios from "axios";
 import {
   AreaChart,
   Area,
@@ -14,6 +16,15 @@ import {
 } from "recharts";
 import "./ServiceDetail.scss";
 const ServicesDetailsArea = () => {
+  const [dataTeam, setDataTeam] = useState();
+  useEffect(() => {
+    axios
+      .get("https://642cd6d566a20ec9ce8f59f7.mockapi.io/api/service")
+      .then((res) => {
+        const data = res.data;
+        setDataTeam({ data });
+      });
+  }, []);
   const pageName = "Details";
 
   const data = [
@@ -60,8 +71,10 @@ const ServicesDetailsArea = () => {
       amt: 2100,
     },
   ];
+  console.log(dataTeam?.data[0].serviceDetail.dentalCare.title);
   return (
     <>
+      <Navbar />
       <Breadcrumb pageName={pageName} />
       <div className="service-details-area pt-120 pb-100">
         <div className="container">
@@ -81,7 +94,7 @@ const ServicesDetailsArea = () => {
                   </div>
                   <div className="section-text pos-rel">
                     <h5 className="green-color text-up-case">Dental Care</h5>
-                    <h1>We are here to help when you need us.</h1>
+                    <h1>{dataTeam?.data[0].serviceDetail.dentalCare.title}</h1>
                   </div>
                   <div className="section-line pos-rel">
                     <img
@@ -91,38 +104,7 @@ const ServicesDetailsArea = () => {
                   </div>
                 </div>
                 <div className="service-details-text mb-30">
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                    occaecat cupidatat non proident, sunt in culpa qui officia
-                    deserunt mollit anim id est laborum. Sed ut perspiciatis
-                    unde omnis iste natus error sit voluptatem accusantium
-                    doloremque laudantium, totam rem aperiam, eaque ipsa quae ab
-                    illo inventore veritatis et quasi architecto beatae vitae
-                    dicta sunt explicabo. Nemo enim ipsam voluptatem quia
-                    voluptas sit aspernatur aut odit aut fugit, sed quia
-                    consequuntur magni dolores eos qui ratione voluptatem sequi
-                    nesciunt. Neque porro quisquam est, qui dolorem ipsum quia
-                    dolor sit amet, consectetur, adipisci velit, sed quia non
-                    numquam eius modi tempora incidunt ut labore et dolore
-                    magnam aliquam quaerat voluptatem.
-                  </p>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                    occaecat cupidatat non proident, sunt in culpa qui officia
-                    deserunt mollit anim id est laborum. Sed ut perspiciatis
-                    unde omnis iste natus error sit voluptatem accusantium
-                    doloremque laudantium, totam rem aperiam.
-                  </p>
+                  <p>{dataTeam?.data[0].serviceDetail.dentalCare.desc}</p>
                 </div>
                 <div className="service-details-feature fix mb-35">
                   <div className="ser-fea-box f-left">
@@ -139,30 +121,21 @@ const ServicesDetailsArea = () => {
                       >
                         <h3>Personal care</h3>
                         <ul>
-                          <li>
-                            <CheckOutlined
-                              style={{ color: "green", marginRight: "10px" }}
-                            />
-                            Cillum dolore eu fugiat nulla.
-                          </li>
-                          <li>
-                            <CheckOutlined
-                              style={{ color: "green", marginRight: "10px" }}
-                            />
-                            Lorem ipsum dolor sit amet.
-                          </li>
-                          <li>
-                            <CheckOutlined
-                              style={{ color: "green", marginRight: "10px" }}
-                            />
-                            Consectetur adipisicing elit,
-                          </li>
-                          <li>
-                            <CheckOutlined
-                              style={{ color: "green", marginRight: "10px" }}
-                            />
-                            Sed do eiusmod tempor inci.
-                          </li>
+                          {dataTeam?.data[0].serviceDetail.personalCare.map(
+                            (item, index) => {
+                              return (
+                                <li key={index}>
+                                  <CheckOutlined
+                                    style={{
+                                      color: "green",
+                                      marginRight: "10px",
+                                    }}
+                                  />
+                                  {item.name}
+                                </li>
+                              );
+                            }
+                          )}
                         </ul>
                       </div>
                     </div>
@@ -181,30 +154,21 @@ const ServicesDetailsArea = () => {
                       >
                         <h3>Lifestyle support</h3>
                         <ul>
-                          <li>
-                            <CheckOutlined
-                              style={{ color: "green", marginRight: "10px" }}
-                            />
-                            Didunt ut labore et dolore magna.
-                          </li>
-                          <li>
-                            <CheckOutlined
-                              style={{ color: "green", marginRight: "10px" }}
-                            />
-                            Aliqua. Ut enim ad minim veniam.
-                          </li>
-                          <li>
-                            <CheckOutlined
-                              style={{ color: "green", marginRight: "10px" }}
-                            />
-                            Quis nostrud exercitation ullamco.
-                          </li>
-                          <li>
-                            <CheckOutlined
-                              style={{ color: "green", marginRight: "10px" }}
-                            />
-                            Laboris nisi ut aliquip ex ea.
-                          </li>
+                          {dataTeam?.data[0].serviceDetail.lifestyleSupport.map(
+                            (item, index) => {
+                              return (
+                                <li key={index}>
+                                  <CheckOutlined
+                                    style={{
+                                      color: "green",
+                                      marginRight: "10px",
+                                    }}
+                                  />
+                                  {item.name}
+                                </li>
+                              );
+                            }
+                          )}
                         </ul>
                       </div>
                     </div>
