@@ -1,5 +1,5 @@
 import React from 'react';
-import { Offcanvas } from 'react-bootstrap';
+import Offcanvas  from 'react-bootstrap/Offcanvas';
 import { NavLink } from 'react-router-dom';
 import Collapsible from 'react-collapsible';
 
