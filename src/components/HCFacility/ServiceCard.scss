@@ -49,6 +49,10 @@ $green: #8fb569;
         a, a:hover {
             text-decoration: none;
         }
+
+        a:hover {
+            color: $green !important;
+        }
     }
 
     &__name {
@@ -78,10 +82,6 @@ $green: #8fb569;
         display: inline-block;
 
         margin-top: 5px;
-
-        &:hover {
-            color: $green;
-        }
     }
 
 }

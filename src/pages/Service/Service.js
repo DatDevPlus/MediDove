@@ -3,6 +3,7 @@ import Breadcrumb from "../../components/Breadcrumb/Breadcrumb";
 import HCFacility from "../../components/HCFacility/HCFacility";
 import ServiceContact from "../../components/ServiceContact/ServiceContact";
 import Navbar from "../../components/Navbar/Navbar";
+import ForEmployers from "../../components/ForEmployers/ForEmployers";
 
 const Service = () => {
 
@@ -13,6 +14,7 @@ const Service = () => {
       <Breadcrumb pageName={pageName} />
       <HCFacility />
       <ServiceContact />
+      <ForEmployers />
     </Fragment>
   );
 };
