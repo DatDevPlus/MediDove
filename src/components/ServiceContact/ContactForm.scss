@@ -2,6 +2,7 @@
 $white: #fff;
 $pink: #e12454;
 $green: #8fb569;
+$baby-pink: #eee7ff;
 
 @mixin text-custom ($font_family, $font_size, $font_weight) {
     font-family: $font_family, sans-serif;
@@ -30,33 +31,34 @@ $green: #8fb569;
 
     .phone__input {
 
-        .ant-input {
-            margin-right: 0px !important;
-            line-height: 70px;
+        .ant {
+            &-input {
+                margin-right: 0px !important;
+                line-height: 70px;
+
+                &-affix-wrapper {
+
+                    border-style: none !important;
+                    padding-left: 38px !important;
+
+                    &:focus, &-focused {
+                        box-shadow: 0 0 0 0px rgba(116, 55, 11, 0.2);
+                    }
+                }
+            }
+
+            &icon {
+                font-size: 16px;
+                margin-right: 30px;
+            }
+
+            &-form-item-control-input-content {
+                border: 2px solid $baby-pink !important;
+            }
         }
           
         input {
             height: 70px;
-            
-        }
-          
-        .anticon {
-            font-size: 16px;
-            margin-right: 30px;
-        }
-
-        .ant-input-affix-wrapper:focus, .ant-input-affix-wrapper-focused {
-            box-shadow: 0 0 0 0px rgba(116, 55, 11, 0.2);
-        }
-
-        .ant-form-item-control-input-content {
-            padding-left: 38px !important;
-            border: 2px solid #eee7ff !important;
-
-            .ant-input-affix-wrapper {
-                border-style: none !important;
-                padding: 0px !important;
-            }
         }
     }
 

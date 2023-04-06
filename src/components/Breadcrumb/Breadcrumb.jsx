@@ -3,10 +3,16 @@ import "./Breadcrumb.scss";
 import PropTypes from "prop-types";
 
 const Breadcrumb = (props) => {
+  const { pageName } = props;
 
-    const { pageName } = props;
+  const background_image =
+    "https://medi-dove.netlify.app/static/media/page-bg.19c1fbc541073bd8ef07.jpg";
+
   return (
-    <section class="breadcrumb__section" style={{ backgroundImage: 'url("https://medi-dove.netlify.app/static/media/page-bg.19c1fbc541073bd8ef07.jpg")'}}>
+    <section
+      class="breadcrumb__section"
+      style={{ backgroundImage: `url(${background_image})` }}
+    >
       <div class="breadcrumb__container container">
         <div class="row">
           <div class="col-lg-9 col-md-9">
@@ -37,6 +43,6 @@ const Breadcrumb = (props) => {
 
 Breadcrumb.propTypes = {
   pageName: PropTypes.string,
-}
+};
 
 export default Breadcrumb;

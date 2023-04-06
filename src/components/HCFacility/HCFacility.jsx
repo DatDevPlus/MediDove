@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import "./HCFacility.scss";
 import ServiceCard from './ServiceCard';
-import service_cards_list from './ServiceCardsList';
+import axios from 'axios';
+import end_point_url from '../../API';
 
 const HCFacility = () => {
+
+  const [serviceCards, setServiceCards] = useState([]);
 
   const title_image = "https://medi-dove.netlify.app/img/section/section-back-icon.png";
   const big_title = "Would you rather stay at home than go into a health care facility?";
@@ -12,6 +15,11 @@ const HCFacility = () => {
   ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
   pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
   Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.`;
+
+  useEffect(() => {
+    axios.get(end_point_url)
+    .then((res) => setServiceCards(res.data[0].departments));
+  }, []);
 
   return (
     <section className="facility__area">
@@ -33,8 +41,8 @@ const HCFacility = () => {
           </div>
         </div>
         <div className="row">
-          {service_cards_list.map((item, index) => 
-          <ServiceCard key={index} image={item.image} name={item.name} desc={item.desc} />
+          {serviceCards && serviceCards.map((item, index) => 
+          <ServiceCard key={index} image={item.img} name={item.title} desc={item.des} />
           )}
         </div>
       </div>
