@@ -1,14 +1,12 @@
-
-import './App.css';
-import 'antd/dist/antd.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import "./App.css";
+import "antd/dist/antd.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import Service from "./pages/Service/Service";
 import ServiceDetails from "./pages/Service/ServiceDetails";
 import Doctor from "./pages/Doctor/Doctor";
 import DoctorDetails from "./pages/Doctor/DoctorDetails";
-
 function App() {
   return (
     <BrowserRouter>
