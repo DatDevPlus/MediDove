@@ -1,6 +1,7 @@
 import React from "react";
 import "./ServiceContact.scss";
 import ContactForm from "./ContactForm";
+import SliceButton from "../SliceButton/SliceButton";
 
 const ServiceContact = () => {
   const background_image =
@@ -9,6 +10,8 @@ const ServiceContact = () => {
     const title_desc = 
     `If you require services on a public holiday, overnight services or live-in services, please call 
     (+00)888.666.88 so we can discuss prices with you.`;
+
+  const button_content = "Make appointment";
 
   return (
     <section
@@ -26,7 +29,7 @@ const ServiceContact = () => {
                     </div>
                 </div>
                 <div className="button__area">
-                    //
+                    <SliceButton content={button_content} color="green" />
                 </div>
             </div>
             <div className="col-xl-5 col-lg-6">

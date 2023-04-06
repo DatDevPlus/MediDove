@@ -1,0 +1,84 @@
+//
+$white: #fff;
+$dark_grey: #647589;
+$black: #223645;
+$pink: #e12454;
+$pink_shadow: rgba(225,36,84,.2);
+$green: #8fb569;
+$green_shadow: hsla(90,34%,56%,.3);
+
+//
+@mixin text-custom ($font_family, $font_size, $font_weight) {
+    font-family: $font_family, sans-serif;
+    font-size: $font_size;
+    font-weight: $font_weight;
+}
+
+.slice-button.custom-button {
+
+    margin-bottom: 30px;
+
+    @include text-custom(Rubik, 14px, 400);
+    color: $dark_grey;
+
+    a, a:hover {
+        text-decoration: none;
+    }
+
+    .button {
+
+        &__rounded {
+            border-radius: 30px;
+            padding: 24px 50px 22px 84px;
+
+            border: none;
+            color: $white;
+            cursor: pointer;
+            display: inline-block;
+            font-weight: 500;
+            letter-spacing: 1px;
+            line-height: 1;
+            margin-bottom: 0;
+            position: relative;
+            text-align: center;
+            text-transform: uppercase;
+
+            .plus-icon {
+                @include text-custom(Rubik, 20px, 600);
+                background: $white;
+                border-radius: 100%;
+                color: $black;
+                height: 50px;
+                left: 5px;
+                line-height: 50px;
+                position: absolute; 
+                text-align: center;
+                top: 5px;
+                transition: .3s;
+                width: 50px;
+            }
+        }
+
+        &--green {
+            background-color: $green;
+            box-shadow: 0 8px 16px 0 $green_shadow;
+
+            &:hover {
+                background-color: $pink;
+                box-shadow: 0 8px 16px 0 $pink_shadow;
+                color: $white !important;
+            }
+        }
+
+        &--pink {
+            background-color: $pink;
+            box-shadow: 0 8px 16px 0 $pink_shadow;
+
+            &:hover {
+                background-color: $green;
+                box-shadow: 0 8px 16px 0 $green_shadow;
+                color: $white !important;
+            }
+        }
+    }
+}
