@@ -7,16 +7,29 @@ import { PhoneFilled } from "@ant-design/icons";
 
 const ContactForm = () => {
   const [form] = Form.useForm();
+  const [messageApi, contextHolder] = message.useMessage();
 
   const placeholder = "Your Phone number";
 
   const onFinish = () => {
     form.resetFields(["phone"]);
-    message.success('Submit success!');
+    messageApi.open({
+      type: 'success',
+      content: 'Your input is submitted successfully!',
+      style: {
+        marginTop: '13vh',
+      },
+    });
   };
 
   const onFinishFailed = () => {
-    message.error('Submit failed!');
+    messageApi.open({
+      type: 'error',
+      content: 'Submit failed!',
+      style: {
+        marginTop: '13vh',
+      },
+    });
   };
 
   return (
@@ -27,6 +40,7 @@ const ContactForm = () => {
     onFinish={onFinish}
     onFinishFailed={onFinishFailed}
     >
+      {contextHolder} 
       <div className="content__wrapper">
         {select_options_lists.map((list, index) => (
           <Form.Item>
@@ -45,6 +59,7 @@ const ContactForm = () => {
             { 
               type: 'string', 
               len: 10,
+              pattern: new RegExp(/^[0-9]+$/),
               message: "Input phone number is not valid!",
             }
           ]}
