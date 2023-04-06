@@ -71,10 +71,11 @@ const ServicesDetailsArea = () => {
       amt: 2100,
     },
   ];
+  const bigTitle = "Our Services";
   return (
     <>
       <Navbar />
-      <Breadcrumb pageName={pageName} />
+      <Breadcrumb pageName={pageName} bigTitle={bigTitle} />
       <div className="service-details-area pt-120 pb-100">
         <div className="container service-details__container">
           <div className="row">

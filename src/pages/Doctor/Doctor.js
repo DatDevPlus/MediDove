@@ -1,5 +1,5 @@
 import React from "react";
-import SingleCount from "../../components/Doctor01/SingleCount.js";
+import SingleCount from "../../components/Doctor01/SingleCount";
 import OurTeam from "../../components/Doctor01/OurTeam.js";
 import Available from "../../components/Doctor01/Available.js";
 import Breadcrumb from '../../components/Breadcrumb/Breadcrumb.jsx'
