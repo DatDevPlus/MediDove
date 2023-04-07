@@ -1,3 +1,4 @@
+/* eslint-disable */
 import "./App.css";
 import "antd/dist/antd.css";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -7,7 +8,14 @@ import Service from "./pages/Service/Service";
 import ServiceDetails from "./pages/Service/ServiceDetails";
 import Doctor from "./pages/Doctor/Doctor";
 import DoctorDetails from "./pages/Doctor/DoctorDetails";
+import {useEffect} from 'react'
 function App() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1100,
+      delay: 400,
+    })
+  }, [])
   return (
     <BrowserRouter>
       <Routes>

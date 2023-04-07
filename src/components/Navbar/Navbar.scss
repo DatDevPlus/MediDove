@@ -295,14 +295,14 @@
 
 //sticky menu
 .sticky_menu {
-  -webkit-animation: fadeInDown .8s ease-in-out 0s 1 normal none running;
-  animation: fadeInDown .8s ease-in-out 0s 1 normal none running;
+  -webkit-animation: fadeInDown 0.8s ease-in-out 0s 1 normal none running;
+  animation: fadeInDown 0.8s ease-in-out 0s 1 normal none running;
   background: #fff;
-  box-shadow: 0 0 10px 3px rgba(0, 0, 0, .05);
+  box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.05);
   left: 0;
   position: fixed;
   top: 0;
-  transition: all .3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
   width: 100%;
   z-index: 9999999;
 }
@@ -315,7 +315,7 @@
   max-width: 100%;
   outline: 0;
   position: fixed;
-  transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
   z-index: 99999999;
 }
 
@@ -406,7 +406,7 @@
 }
 
 .sidebar_sub_menu li a {
-  opacity: .75;
+  opacity: 0.75;
   padding-left: 25px;
 }
 

@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/anchor-has-content, jsx-a11y/anchor-is-valid */
 import React from 'react';
 import { Offcanvas } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
