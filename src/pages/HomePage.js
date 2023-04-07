@@ -1,12 +1,14 @@
 import React from 'react';
-import OurTeam from '../components/OurTeam/OurTeam';
-
-
+import Navbar from '../components/Navbar/Navbar.jsx'
+import RemainingFooter from '../components/RemainingFooter/RemainingFooter'
+import HomeFooter from '../components/HomeFooter/HomeFooter.jsx'
 const HomePage = () => {
   return (
-   <>
-    <OurTeam/>
-   </>
+    <>
+      <Navbar />
+      <HomeFooter />
+      <RemainingFooter />
+    </>
   )
 }
 
