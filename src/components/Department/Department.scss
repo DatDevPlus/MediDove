@@ -1,0 +1,81 @@
+.department__area {
+
+    background-color: #f4f9fc;
+    padding-top: 115px;
+    padding-bottom: 90px;
+
+    .department {
+
+        &__container {
+            width: 100%;
+
+            @media screen and (min-width: 576px) and (max-width: 767px) {
+                & {
+                    max-width: 540px !important;
+                }
+            }
+
+            @media screen and (min-width: 768px) and (max-width: 992px) {
+                & {
+                    max-width: 720px !important;
+                }
+            }
+
+            @media screen and (min-width: 992px) and (max-width: 1199px) {
+                & {
+                    max-width: 960px !important;
+                }
+            }
+
+            @media screen and (min-width: 1200px) {
+                & {
+                    max-width: 1200px !important;
+                }
+            }
+        }
+
+        &__title {
+            position: relative;
+            margin-bottom: 75px;
+            text-align: center;
+
+            .title__wrapper {
+                position: relative;
+
+                h5 {
+                    margin-bottom: 28px;
+                    color: #647589;
+                    font-family: Rubik, sans-serif;
+                    font-size: 18px;
+                    font-weight: 500;
+                }
+
+                h1 {
+                    margin: 0 auto 18px;
+                    max-width: 600px;
+                    color: #223645;
+                    font-family: Poppins, sans-serif;
+                    font-weight: 600;
+
+                    @media (min-width: 768px) and (max-width: 991px) {
+                        & {
+                            font-size: 40px;
+                        }
+                    }
+                }
+            }
+
+            .section-line {
+                position: relative;
+            }
+        }
+
+        &__icon {
+            left: 0;
+            margin: auto;
+            position: absolute;
+            right: 0;
+            top: -50px;
+        }
+    }
+}

@@ -9,7 +9,7 @@ import "./Counter.scss";
 const HomeSingleTeam = () => {
   return (
     <>
-      <div>
+      <div className="single-count">
         <Container style={{ zIndex: 3 }}>
           <Row xs={1} sm={1} md={2} lg={3} xl={3}>
             <Col>
