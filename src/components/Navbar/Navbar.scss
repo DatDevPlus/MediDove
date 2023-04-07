@@ -68,7 +68,7 @@
     }
   }
 
-  .top__bar-area>* {
+  .top__bar-area > * {
     flex-shrink: 0;
     margin-top: var(--bs-gutter-y);
     max-width: 100%;
@@ -80,7 +80,6 @@
 
 .menu__area {
   .menu__area-container {
-
     // margin-left: auto;
     // margin-right: auto;
     // padding-left: 0.75rem;
@@ -589,5 +588,17 @@
 
   button:focus:not(:focus-visible) {
     outline: 0;
+  }
+}
+@media only screen and (max-width: 390px) {
+  .menu__area {
+    width: 100%;
+    padding: 10px;
+    .menu__area-container {
+      width: 100%;
+      .menu__wrapper {
+        width: 100%;
+      }
+    }
   }
 }
