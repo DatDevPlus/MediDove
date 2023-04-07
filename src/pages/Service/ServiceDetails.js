@@ -71,13 +71,12 @@ const ServicesDetailsArea = () => {
       amt: 2100,
     },
   ];
-  console.log(dataTeam?.data[0].serviceDetail.dentalCare.title);
   return (
     <>
       <Navbar />
       <Breadcrumb pageName={pageName} />
       <div className="service-details-area pt-120 pb-100">
-        <div className="container">
+        <div className="container service-details__container">
           <div className="row">
             <div className="col-xl-7 col-lg-8">
               <article className="service-details-box">
@@ -175,7 +174,6 @@ const ServicesDetailsArea = () => {
                   </div>
                 </div>
                 <div className="service-chart mb-55">
-                  {/* <img src="img/services/service-chart.jpg" alt=""/> */}
                   <ResponsiveContainer width="100%" height={300}>
                     <AreaChart
                       width={500}
