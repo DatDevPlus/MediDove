@@ -10,9 +10,14 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-ul, li{
+ul,
+li {
   list-style: none;
 }
-a:hover{
+a:hover {
   text-decoration: none;
+}
+html,
+section {
+  overflow-x: hidden;
 }
