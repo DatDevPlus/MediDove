@@ -85,6 +85,10 @@
             flex-direction: column;
             margin-bottom: 12px;
           }
+          margin-right: 10px;
+          li{
+            margin-bottom:  10px !important;
+          }
         }
       }
       .doctor_details_feature-2 {
@@ -110,8 +114,15 @@
             flex-direction: column;
             margin-bottom: 12px;
           }
+          svg{
+            margin-right: 10px;
+          }
+          li{
+            list-style: none;
+            margin-bottom: 10px !important;
+          }
         }
-      }
+
     }
     .doctor_details_text-2 {
       margin-bottom: 30px;
@@ -328,7 +339,7 @@
       white-space: nowrap;
       text-decoration: none;
     }
-    .language-details ul{
+    .language-details ul {
       padding-inline-start: 0px !important;
     }
     .language-details li {
@@ -370,5 +381,141 @@
         }
       }
     }
+    .card_widger-wrap {
+      img {
+        text-align: center;
+        margin-left: 115px !important;
+      }
+      .card-infor {
+        text-align: center !important;
+      }
+      .card-social {
+        text-align: center !important;
+        padding-inline-start: 0px !important;
+      }
+    }
+    .input-contact {
+      select {
+        width: 100% !important;
+      }
+    }
+    .doctor_details_feature-2{
+      .list-2{
+        ul{
+          margin-left: 20px !important;
+        }
+      }
+    }
   }
+
+  //Iphone12 pro
+  @media only screen and (max-width: 390px) {
+    .doctor_details_box {
+      padding-top: 115px;
+      padding-bottom: 70px;
+      .doctor_details_tittle {
+        .section_text {
+          h1 {
+            font-size: 40px !important;
+          }
+        }
+      }
+    }
+    .card_widger{
+      .widget-list a{
+        display: block !important;
+        margin-bottom: 10px;
+      }
+      .widget-infor{
+        margin-left: 0px !important;
+      }
+      .widget-title{
+        h3{
+          font-size: 26px !important;
+        }
+      }
+    }
+    .card_widger-wrap {
+      .card-thumb{
+        img {
+          align-items: center;
+          margin-left: 0 !important;
+        }
+      }
+      .card-infor {
+        text-align: center !important;
+        h3 {
+          font-size: 22px !important;
+        }
+        h6 {
+          font-size: 14px !important;
+        }
+      }
+      .card-social {
+        ul{
+          text-align: center !important;
+          padding-inline-start: 0px !important;
+        }
+      }
+    }
+    .input-contact {
+      select {
+        width: 100% !important;
+      }
+    }
+    .language-details {
+      padding: 0px 30px 30px 0px !important;
+      margin-bottom: 50px !important;
+      ul {
+        display: flex;
+        margin-right: 100px;
+      }
+    }
+    .icon-2{
+      img{
+        margin-top: 10px !important;
+      }
+    }
+    .list-2 {
+      width: 296px;
+      margin-top: 20px !important;
+      ul {
+        width: 430px;
+        padding-left: 68px !important;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 991px) {
+    .doctor_details_box {
+      padding-top: 115px;
+      padding-bottom: 70px;
+      .doctor_details_tittle {
+        .section_text {
+          h1 {
+            font-size: 40px !important;
+          }
+        }
+      }
+    }
+    .card_widger-wrap {
+      img {
+        text-align: center;
+        margin-left: 115px !important;
+      }
+      .card-infor {
+        text-align: center !important;
+      }
+      .card-social {
+        text-align: center !important;
+        padding-inline-start: 0px !important;
+      }
+    }
+    .input-contact {
+      select {
+        width: 100% !important;
+      }
+    }
+  }
+}
 }

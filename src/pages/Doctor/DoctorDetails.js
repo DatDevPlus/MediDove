@@ -92,22 +92,22 @@ const DoctorDetails = () => {
                 <div className="list-1">
                   <h3> Personal Care </h3>
                   <ul>
-                    <il>
+                    <li>
                       <CheckOutlined style={{ color: "#2a511f" }} />
                       Cillum dolore eu fugiat nulla.
-                    </il>
-                    <il>
+                    </li>
+                    <li>
                       <CheckOutlined style={{ color: "#2a511f" }} />
                       Lorem ipsum dolor sit amet.
-                    </il>
-                    <il>
+                    </li>
+                    <li>
                       <CheckOutlined style={{ color: "#2a511f" }} />
                       Consectetur adipisicing eilt,
-                    </il>
-                    <il>
+                    </li>
+                    <li>
                       <CheckOutlined style={{ color: "#2a511f" }} />
                       Sed do eiusmod tempor inci.
-                    </il>
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -121,22 +121,22 @@ const DoctorDetails = () => {
                 <div className="list-2">
                   <h3> Lifestyle support </h3>
                   <ul>
-                    <il>
+                    <li>
                       <CheckOutlined style={{ color: "#2a511f" }} />
                       Cillum dolore eu fugiat nulla.
-                    </il>
-                    <il>
+                    </li>
+                    <li>
                       <CheckOutlined style={{ color: "#2a511f" }} />
                       Lorem ipsum dolor sit amet.
-                    </il>
-                    <il>
+                    </li>
+                    <li>
                       <CheckOutlined style={{ color: "#2a511f" }} />
                       Consectetur adipisicing eilt,
-                    </il>
-                    <il>
+                    </li>
+                    <li>
                       <CheckOutlined style={{ color: "#2a511f" }} />
                       Sed do eiusmod tempor inci.
-                    </il>
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -175,7 +175,7 @@ const DoctorDetails = () => {
         <div class="col-xl-5 col-lg-4">
           <div className="card_widger">
             <div className="card_widger-wrap box-1 box-2">
-              <div className="card-thumb">
+              <div className="card-thumb ">
                 <img
                   src="https://medi-dove.netlify.app/img/team/member-big.jpg"
                   alt=""
@@ -247,7 +247,7 @@ const DoctorDetails = () => {
           </div>
           <div className="card_widger">
             <div className="widget-title">
-              <h3> Qualifications </h3>
+              <h3> Get Some Advice ?</h3>
             </div>
             <form className="form-input">
               <div class="row">
@@ -284,22 +284,22 @@ const DoctorDetails = () => {
             <div className="widget-title">
               <h3> Languages </h3>
             </div>
-          <div className="language-details">
-            <ul>
-              <li>
-                <a href="#"> en </a>
-              </li>
-              <li>
-                <a href="#"> es </a>
-              </li>
-              <li>
-                <a href="#"> bd </a>
-              </li>
-              <li>
-                <a href="#"> la </a>
-              </li>
-            </ul>
-          </div>
+            <div className="language-details">
+              <ul>
+                <li>
+                  <a href="#"> en </a>
+                </li>
+                <li>
+                  <a href="#"> es </a>
+                </li>
+                <li>
+                  <a href="#"> bd </a>
+                </li>
+                <li>
+                  <a href="#"> la </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
