@@ -9,6 +9,7 @@ import HomeSecondAvail from '../components/HomeSecondAvail/HomeSecondAvail';
 import HomeOurPlan from '../components/HomeOurPlan/HomeOurPlan';
 import News from '../components/News/News';
 import Slider from '../components/Slider/Slider.jsx'
+import VideoPopup from "../components/VideoPopup/VideoPopup.jsx";
 const HomePage = () => {
   const [display, setDisplay] = useState(false);
   const displayVideo = () => {
@@ -23,7 +24,7 @@ const HomePage = () => {
         <VideoPopup hideVideo={hideVideo} display={display} />
       }
       <Navbar />
-      <Slider />
+      <Slider display={display} displayVideo={displayVideo} />
       <AboutUs />
       <Department />
       <OurTeam />
