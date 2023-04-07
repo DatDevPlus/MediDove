@@ -37,7 +37,19 @@
     "production": [
       ">0.2%",
       "not dead",
-      "not op_mini all"
+      "not ie <= 11",
+      "not op_mini all",
+      "Firefox ESR",
+      "Firefox >= 60",
+      "Chrome >= 60",
+      "Safari >= 10.1",
+      "iOS >= 10.3",
+      "Edge >= 16",
+      "Samsung >= 8.2",
+      "Opera >= 47",
+      "ChromeAndroid >= 60",
+      "UCAndroid >= 11.8",
+      "QQAndroid >= 1.2"
     ],
     "development": [
       "last 1 chrome version",
