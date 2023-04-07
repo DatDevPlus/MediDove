@@ -3,8 +3,8 @@ import './AboutUs.scss';
 
 const AboutUs = () => {
     return (
-        <div className='about__us'>
-            <div className="container">
+        <div className='about-us'>
+            <div className="container about-us__container">
                 <div className="row">
                     <div className="col-xl-6 col-lg-5 about__left">
                         <div className="icon__center">
