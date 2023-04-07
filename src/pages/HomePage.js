@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Navbar from "../components/Navbar/Navbar.jsx";
 import HomeFooter from "../components/HomeFooter/HomeFooter.jsx";
 import OurTeam from "../components/OurTeam/OurTeam";
@@ -8,7 +8,7 @@ import HomeAvail from '../components/HomeAvail/HomeAvail';
 import HomeSecondAvail from '../components/HomeSecondAvail/HomeSecondAvail';
 import HomeOurPlan from '../components/HomeOurPlan/HomeOurPlan';
 import News from '../components/News/News';
-
+import Slider from '../components/Slider/Slider.jsx'
 const HomePage = () => {
   const [display, setDisplay] = useState(false);
   const displayVideo = () => {
@@ -23,6 +23,7 @@ const HomePage = () => {
         <VideoPopup hideVideo={hideVideo} display={display} />
       }
       <Navbar />
+      <Slider />
       <AboutUs />
       <Department />
       <OurTeam />

@@ -1,9 +1,10 @@
 import React from "react";
-import SingleCount from "../../components/Doctor01/SingleCount.js";
+import SingleCount from "../../components/Doctor01/SingleCount";
 import OurTeam from "../../components/Doctor01/OurTeam.js";
 import Available from "../../components/Doctor01/Available.js";
 import Breadcrumb from '../../components/Breadcrumb/Breadcrumb.jsx'
 import NavBar from '../../components/Navbar/Navbar.jsx'
+import RemainingFooter from "../../components/RemainingFooter/RemainingFooter";
 const CounterArea = () => {
   const pageName = "Doctor";
   const bigTitle = "Doctor 01";
@@ -21,6 +22,7 @@ const CounterArea = () => {
           </div>
         </div>
       </section>
+      <RemainingFooter />
     </>
   );
 };

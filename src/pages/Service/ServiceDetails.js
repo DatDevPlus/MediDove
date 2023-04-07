@@ -15,6 +15,7 @@ import {
   ResponsiveContainer,
 } from "recharts";
 import "./ServiceDetail.scss";
+import RemainingFooter from "../../components/RemainingFooter/RemainingFooter";
 const ServicesDetailsArea = () => {
   const [dataTeam, setDataTeam] = useState();
   useEffect(() => {
@@ -71,10 +72,11 @@ const ServicesDetailsArea = () => {
       amt: 2100,
     },
   ];
+  const bigTitle = "Our Services";
   return (
     <>
       <Navbar />
-      <Breadcrumb pageName={pageName} />
+      <Breadcrumb pageName={pageName} bigTitle={bigTitle} />
       <div className="service-details-area pt-120 pb-100">
         <div className="container service-details__container">
           <div className="row">
@@ -296,7 +298,7 @@ const ServicesDetailsArea = () => {
                       founder, uithemes
                     </span>
                   </div>
-                  <div className="test-author-icon mb-10">
+                  <div className="test-author-icon mb-10" >
                     <img
                       src="https://medi-dove.netlify.app/img/testimonials/testi-author-icon.png"
                       alt=""
@@ -449,6 +451,7 @@ const ServicesDetailsArea = () => {
           </div>
         </div>
       </div>
+      <RemainingFooter />
     </>
   );
 };
