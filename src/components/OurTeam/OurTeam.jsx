@@ -6,7 +6,7 @@ import members_list from "./TeamMembersList";
 const OurTeam = () => {
     return (
         <div className='our__team'>
-            <div className="container">
+            <div className="container team__container">
                 <div className="row wrap__ourteam">
                     <div className="col-xl-6 col-lg-7 col-md-10">
                         <div className="section-title pos-rel mb-75">
