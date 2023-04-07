@@ -4,8 +4,8 @@ import './HomeSecondAvail.scss'
 function HomeSecondAvail() {
     return (
         <section className='availSecond'>
-            <div className="availSecond__container">
-                <div>
+            <div className="container">
+                <div className='row'>
                     <div className="col-xl-10 offset-xl-1 col-md-12">
                         <div className="availSecond__title">
                             <div className="availSecond_text">

@@ -7,7 +7,7 @@ function HomeAvail() {
         <Fragment>
             <section className='avail'>
                 <div className="avail-image"></div>
-            <div className="avail__container">
+            <div className="container">
                 <div className="row">
                     <div className="col-xl-6 col-lg-6 col-md-10">
                         <div className="avail__title">

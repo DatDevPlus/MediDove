@@ -6,6 +6,9 @@ import AboutUs from "../components/AboutUs/AboutUs";
 import Department from "../components/Department/Department";
 import HomeAvail from '../components/HomeAvail/HomeAvail';
 import HomeSecondAvail from '../components/HomeSecondAvail/HomeSecondAvail';
+import HomeOurPlan from '../components/HomeOurPlan/HomeOurPlan';
+import News from '../components/News/News';
+import HomeNewsList from '../components/HomeNewsList/HomeNewsList';
 
 
 const HomePage = () => {
@@ -26,8 +29,10 @@ const HomePage = () => {
       <Department />
       <OurTeam />
       <HomeAvail />
-      <HomeSecondAvail/>
-      <HomeFooter />
+      <HomeOurPlan />
+      <HomeSecondAvail />
+      <News />
+      {/* <HomeNewsList/> */}
     </>
   );
 };
