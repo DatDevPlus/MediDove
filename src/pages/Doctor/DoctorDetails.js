@@ -1,5 +1,4 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
-/* eslint-disable jsx-a11y/iframe-has-title */
+
 import React from "react";
 import "./DoctorDetails.scss";
 import {
