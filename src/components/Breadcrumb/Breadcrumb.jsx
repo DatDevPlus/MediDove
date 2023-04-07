@@ -3,7 +3,7 @@ import "./Breadcrumb.scss";
 import PropTypes from "prop-types";
 
 const Breadcrumb = (props) => {
-  const { pageName } = props;
+  const { pageName, bigTitle } = props;
 
   const background_image =
     "https://medi-dove.netlify.app/static/media/page-bg.19c1fbc541073bd8ef07.jpg";
@@ -18,7 +18,7 @@ const Breadcrumb = (props) => {
           <div class="col-lg-9 col-md-9">
             <div class="breadcrumb__title">
               <p class="title--small">We are here for your care.</p>
-              <h1 class="title--big">Our Services</h1>
+              <h1 class="title--big">{bigTitle}</h1>
             </div>
           </div>
           <div class="col-lg-3 col-md-3 breadcrumb__wrapper">
