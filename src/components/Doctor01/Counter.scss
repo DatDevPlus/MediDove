@@ -1,0 +1,213 @@
+/* 12. Counter */
+.about-area{
+    background-color: #f4f9fc;
+    padding: 120px 0px 120px 0px;
+}
+.theme-color {
+    font-size: 80px;
+    color: #e12454;
+    font-weight: 200;
+    margin: 0px;
+}
+
+.col-xl-4{
+    display: flex;
+    .single-couter{
+        width: 376px;
+        height: 394px;
+    }
+}
+.single-couter h1 {
+    font-size: 80px;
+    color: #e12454;
+    margin-top: 20px;
+    font-weight: 200;
+}
+@media only screen and (min-width: 1200px) {
+    .single-couter {
+        img{
+            display: flex;
+            justify-content: left;
+        }
+        h1{
+            text-align: left;
+    
+        }
+    
+        .green-color{
+            font-size: 24px;
+            color: #223645;
+            font-family: 700;
+            text-align: left;
+    
+        }
+        .counter-text{
+            p{
+                text-align: left;
+                padding: 0px 40px 0px 0px;
+            }
+        }
+    }
+  }
+  @media only screen and (min-width: 992px) and (max-width:1199px) {
+    .about-area{
+        min-width: 105%;
+        background-color: #f4f9fc;
+    }
+    .container{
+        margin-left: 5%;
+    }
+    .single-couter {
+        img{
+            display: flex;
+            justify-content: left;
+        }
+        h1{
+            text-align: left;
+        }
+        .green-color{
+            font-size: 24px;
+            color: #223645;
+            font-family: 700;
+            text-align: left;
+        }
+        .counter-text{
+            p{
+                text-align: left;
+                padding: 0px 40px 0px 0px;
+            }
+        }
+    }
+  }
+  @media only screen and (min-width: 768px) and (max-width:991px) {
+ 
+    .container{
+        margin-left: 5%;
+    }
+    .single-couter {
+        margin-top: 50px;
+        img{
+            display: flex;
+            justify-content: left;
+        }
+        h1{
+            text-align: left;
+        }
+        .green-color{
+            font-size: 24px;
+            color: #223645;
+            font-family: 700;
+            text-align: left;
+        }
+        .counter-text{
+            p{
+                text-align: left;
+                padding: 0px 40px 0px 0px;
+            }
+        }
+    }
+  }
+  @media only screen and (min-width: 479px) and (max-width:767px) {
+ 
+
+    .single-couter {
+       
+        margin-top: 70px;
+        img{
+            display: flex;
+            justify-content: center;
+            padding-left: 40%;
+
+        }
+        h1{
+            text-align: center;
+        }
+        .green-color{
+            font-size: 24px;
+            color: #223645;
+            font-family: 700;
+            text-align: center;
+        }
+        .counter-text{
+            p{
+                text-align: center;
+            }
+        }
+    }
+  }
+  @media only screen and (max-width:478px) {
+ 
+
+    .single-couter {
+       
+        margin-bottom: 70px;
+        // img{
+        //     display: flex;
+        //     justify-content: center;
+        //     padding-left: 40%;
+
+        // }
+        // h1{
+        //     text-align: center;
+        // }
+        // .green-color{
+        //     font-size: 24px;
+        //     color: #223645;
+        //     font-family: 700;
+        //     text-align: center;
+        // }
+        // .counter-text{
+        //     p{
+        //         text-align: center;
+        //     }
+        // }
+    }
+  }
+
+
+.counter-box h1 {
+    font-weight: 600;
+    color: #fff;
+    font-size: 50px;
+    margin-top: 12px;
+}
+.counter-box-white h1 {
+    color: #223645;
+}
+.single-couter h3 {
+    font-size: 24px;
+    margin-top: 10px;
+    margin-bottom: 17px;
+}
+.single-couter p {
+    margin-bottom: 0;
+    padding-right: 40px;
+}
+.counter-text p {
+    width: 100%;
+    padding: 0 52px;
+    max-width: 370px;
+    font-size: 14px;
+    color: #647589;
+    margin: 0 auto;
+}
+.counter-box-white h6 {
+    position: relative;
+    margin-bottom: 11px;
+}
+.counter-box-white h6::after, .counter-box-white h6::before {
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 2px;
+    left: 0;
+    background: #e8ebff;
+    right: 0;
+    margin: auto;
+    bottom: 0;
+}
+.counter-box.counter-box-white:hover h6::before {
+    width: 30px;
+    visibility: visible;
+    opacity: 1;
+}

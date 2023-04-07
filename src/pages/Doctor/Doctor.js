@@ -1,9 +1,28 @@
-import React from 'react'
+import React from "react";
+import SingleCount from "../../components/Doctor01/SingleCount.js";
+import OurTeam from "../../components/Doctor01/OurTeam.js";
+import Available from "../../components/Doctor01/Available.js";
+import Breadcrumb from '../../components/Breadcrumb/Breadcrumb.jsx'
+import NavBar from '../../components/Navbar/Navbar.jsx'
+const CounterArea = () => {
+  const pageName = "Doctor";
+  const bigTitle = "Doctor 01";
 
-const Doctor = () => {
   return (
-    <div>Doctor</div>
-  )
-}
+    <>
+    <NavBar/>
+      <Breadcrumb pageName={pageName} bigTitle={bigTitle} />
+      <OurTeam />
+      <Available />
+      <section className="about-area pt-120 pb-80">
+        <div className="container" style={{ marginRight: "15.5%" }}>
+          <div className="row">
+            <SingleCount />
+          </div>
+        </div>
+      </section>
+    </>
+  );
+};
 
-export default Doctor
+export default CounterArea;
