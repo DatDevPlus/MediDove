@@ -1,0 +1,176 @@
+$color_1: #899dab;
+$color_2: #b47b7b;
+$color_3: #fff;
+$color_4: #223645;
+$color_5: #8fb569;
+$font-family_1: Rubik, sans-serif;
+$font-family_2: Rubik;
+$font-family_3: "Font Awesome 5 Pro";
+$background-color_1: #e12454;
+$background-color_2: #8fb569;
+
+@import "https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap";
+.campus-map {
+	background: #13232f;
+	position: relative;
+	padding: 115px 0 60px 0;
+	>div {
+		margin-left: auto;
+		margin-right: auto;
+		padding-left: 12px;
+		padding-right: 12px;
+	}
+	h1 {
+		margin-top: 0;
+	}
+	h5 {
+		margin-top: 0;
+	}
+	p {
+		margin-top: 0;
+	}
+	&:before {
+		position: absolute;
+		background-image: url(https://medi-dove.netlify.app/static/media/map.54de82487cec37de8695.png);
+		background-position: 50%;
+		background-repeat: no-repeat;
+		content: "";
+		height: 100%;
+		left: 0;
+		position: absolute;
+		top: 0;
+		width: 100%;
+	}
+	.campus-content {
+		padding: 0 15px 0 15px;
+		.campus-text {
+			h5 {
+				color: $color_1;
+				font-family: $font-family_1;
+				font-size: 18px;
+				font-weight: 500;
+				margin-bottom: 28px;
+			}
+			h1 {
+				line-height: 1.2;
+				margin-bottom: 18px;
+				color: $color_2 !important;
+				font-size: 47px;
+				letter-spacing: -0.3px;
+				line-height: 1.22;
+			}
+			margin-bottom: 45px;
+		}
+		.button-campus {
+			margin-bottom: 30px;
+			.button-colum {
+				background-color: $background-color_1;
+				border: none;
+				display: inline-block;
+				letter-spacing: 1px;
+				line-height: 1;
+				margin-bottom: 0;
+				position: relative;
+				transition: all 0.3s ease 0s;
+				box-shadow: 0 8px 16px 0 rgba(225, 36, 84, 0.2);
+				border-radius: 30px;
+				padding: 24px 50px 22px 84px;
+				a {
+					color: $color_3;
+					text-transform: uppercase;
+					font-weight: 700;
+					text-align: center !important;
+				}
+				span {
+					background: #ffffff;
+					border-radius: 100%;
+					color: $color_4;
+					font-size: 20px;
+					font-weight: 600;
+					height: 50px;
+					left: 5px;
+					line-height: 50px;
+					position: absolute;
+					text-align: center;
+					top: 5px;
+					transition: 0.3s;
+					width: 50px;
+					font-family: $font-family_2;
+				}
+				&:hover {
+					background-color: $background-color_2;
+				}
+			}
+		}
+	}
+	.primary-content {
+		.text-satisfide {
+			margin-bottom: 50px;
+			.singel-satisfide {
+				h1 {
+					color: $color_5;
+					float: left;
+					margin-right: 20px;
+					width: 140px;
+					font-size: 60px;
+					letter-spacing: -0.3px;
+					line-height: 1.22;
+				}
+				h5 {
+					display: inline-block;
+					width: calc(100% - 160px);
+					color: $color_3;
+					margin-bottom: 15px;
+					font-family: $font-family_1;
+					font-size: 18px;
+					font-weight: 500;
+				}
+				p {
+					display: inline-block;
+					width: calc(100% - 160px);
+					color: $color_1;
+					font-size: 14px;
+					font-weight: 400;
+					line-height: 26px;
+					margin-bottom: 15px;
+				}
+			}
+			.satisfide-user {
+				span {
+					font-family: $font-family_3;
+					font-weight: 900;
+					margin-right: 5px;
+				}
+			}
+		}
+	}
+}
+@media (min-width: 576px) {
+	.campus-map {
+		>div {
+			max-width: 540px;
+		}
+	}
+}
+@media (min-width: 768px) {
+	.campus-map {
+		>div {
+			max-width: 720px;
+		}
+	}
+}
+@media (min-width: 992px) {
+	.campus-map {
+		>div {
+			max-width: 960px;
+		}
+	}
+}
+@media (min-width: 1200px) {
+	.campus-map {
+		>div {
+			max-width: 100%;
+		}
+	}
+}
