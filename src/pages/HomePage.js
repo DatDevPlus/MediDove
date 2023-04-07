@@ -1,9 +1,12 @@
 import React from 'react';
-import Navbar from '../components/Navbar/Navbar.jsx'
+import OurTeam from '../components/OurTeam/OurTeam';
+
 
 const HomePage = () => {
   return (
-    <Navbar />
+   <>
+    <OurTeam/>
+   </>
   )
 }
 
