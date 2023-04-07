@@ -28,7 +28,7 @@
   },
   "scripts": {
     "start": "react-scripts start --no-eslint",
-    "build": "react-scripts build --no-eslint",
+    "build": "react-scripts build",
     "test": "react-scripts test --no-eslint",
     "eject": "react-scripts eject"
   },
