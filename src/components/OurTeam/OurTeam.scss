@@ -206,7 +206,27 @@
     }
 
 }
+// max-width
+// @media (min-width: 768px){
+// .container-md, .container-sm {
+//         max-width: 720px !important;
+//     }
+//     }
 
+@media (max-width: 767px){
+.big__text .text__2 {
+    font-size: 32px !important;
+}
+}
+@media (min-width: 576px){
+.container, .container-sm {
+    max-width: 540px;
+}
+}
+
+
+
+// Min-Width
 
 @media (min-width: 1200px) {
     .container {
@@ -220,3 +240,27 @@
         width: 50%;
     }
 }
+@media (min-width: 768px){
+.col-md-10 {
+    flex: 0 0 auto;
+    width: 83.33333333%;
+}
+}
+@media (min-width: 768px) and (max-width: 991px){
+.big__text .text__2 {
+    font-size: 40px !important;
+}
+}
+@media (min-width: 768px){
+.col-md-6 {
+    flex: 0 0 auto;
+    width: 50%;
+}
+}
+@media (min-width: 768px) and (max-width: 991px){
+.team__link {
+    right: 0 !important;
+}
+}
+
+
