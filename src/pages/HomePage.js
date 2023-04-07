@@ -8,8 +8,6 @@ import HomeAvail from '../components/HomeAvail/HomeAvail';
 import HomeSecondAvail from '../components/HomeSecondAvail/HomeSecondAvail';
 import HomeOurPlan from '../components/HomeOurPlan/HomeOurPlan';
 import News from '../components/News/News';
-import HomeNewsList from '../components/HomeNewsList/HomeNewsList';
-
 
 const HomePage = () => {
   const [display, setDisplay] = useState(false);
@@ -32,7 +30,8 @@ const HomePage = () => {
       <HomeOurPlan />
       <HomeSecondAvail />
       <News />
-      {/* <HomeNewsList/> */}
+      <HomeFooter />
+
     </>
   );
 };
