@@ -1,0 +1,93 @@
+//
+$black: #223645;
+$dark_grey: #647589;
+
+//
+@mixin text-custom ($font_family, $font_size, $font_weight) {
+    font-family: $font_family, sans-serif;
+    font-size: $font_size;
+    font-weight: $font_weight;
+}
+
+.hiring__section {
+    padding: 120px 0;
+
+    .no-padding {
+        padding: 0 !important;
+    }
+
+    .hiring {
+
+        &__container {
+
+            width: 100%;
+
+            @media screen and (min-width: 576px) and (max-width: 767px) {
+                & {
+                    max-width: 540px !important;
+                }
+            }
+
+            @media screen and (min-width: 768px) and (max-width: 577px)  {
+                & {
+                    max-width: 720px !important;
+                }
+            }
+
+            @media screen and (max-width: 769px) and (min-width: 992px) {
+                & {
+                    max-width: 960px !important;
+                }
+            }
+
+            @media screen and (min-width: 1200px) {
+                & {
+                    max-width: 1200px !important;
+                }
+            }
+
+            .text__wrapper {
+
+                padding: 55px;
+
+                .title {
+
+                    &--big {
+                        @include text-custom(Poppins, 54px, 600);
+                        color: $black;
+
+                        margin-bottom: 38px;
+                        line-height: 1.1;
+                        margin-top: 0;
+                    }
+                }
+
+                .desc {
+
+                    &--small {
+                        @include text-custom(Rubik, 14px, 400);
+                        color: $dark_grey;
+
+                        line-height: 26px;
+                        margin-bottom: 25px;
+                    }
+                }
+            }
+
+            .section {
+
+                &--top {
+                    box-shadow: 5px -6px 16px -2px rgba(197,191,255,.2);
+                }
+    
+                &--bottom {
+                    box-shadow: 0 8px 16px 0 rgba(197,191,255,.2);
+                }
+            }
+        }
+
+        &__row {
+            margin: 0;
+        }
+    }
+}

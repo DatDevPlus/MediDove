@@ -1,0 +1,87 @@
+
+//
+$white: #fff;
+$black: #223645;
+$dark_grey: #647589;
+$green: #8fb569;
+
+//
+@mixin text-custom ($font_family, $font_size, $font_weight) {
+    font-family: $font_family, sans-serif;
+    font-size: $font_size;
+    font-weight: $font_weight;
+}
+
+.service {
+
+    &__box {
+        background: $white;
+
+        padding: 53px;
+        margin-bottom: 30px;
+        
+        text-align: center;
+        transition: 0.4s;
+
+        @media (min-width: 768px) and (max-width: 991px) {
+            & {
+                padding: 36px;
+            }
+        }
+
+        @media (max-width: 767px) {
+            & {
+                padding: 30px;
+            }
+        }
+
+        &:hover {
+            background-color: $white;
+            box-shadow: 0 16px 32px 0 rgba(196,203,255,.3);;
+        }
+    }
+    
+    &__image {
+        margin-bottom: 45px;
+    }
+
+    &__content {
+        a, a:hover {
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: $green !important;
+        }
+    }
+
+    &__name {
+        @include text-custom(Poppins, 26px, 600);
+        line-height: 1.1;
+        margin-bottom: 22px;
+
+        a, a:hover {
+            color: $black;
+            text-decoration: none;
+        }
+    }
+
+    &__desc {
+        @include text-custom(Rubik, 14px, 400);
+        color: $dark_grey;
+        line-height: 26px;
+
+        margin: 0 auto 15px;
+        max-width: 260px;
+    }
+
+    &__link {
+        @include text-custom(Rubik, 14px, 500);
+        color: $dark_grey;
+
+        display: inline-block;
+
+        margin-top: 5px;
+    }
+
+}
