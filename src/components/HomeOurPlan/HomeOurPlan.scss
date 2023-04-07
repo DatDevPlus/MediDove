@@ -1,0 +1,84 @@
+.ourPlan {
+    padding: 0;
+    border-radius: 40px;
+    padding-top: 115px;
+    padding-bottom: 90px;
+    background: #f4f9fc;
+
+    &__title {
+        position: relative;
+        margin-bottom: 75px;
+    }
+
+    &__icon--user {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: -50px;
+    }
+
+    &__text {
+        position: relative;
+    }
+
+    &__line {
+        position: relative;
+    }
+
+    &_text--black {
+        margin-bottom: 28px;
+        color: #647589;
+        font-family: Rubik, sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 1.1;
+    }
+
+    &_text--grey {
+        margin-bottom: 18px;
+        line-height: 1.2;
+        font-size: 59px;
+        letter-spacing: -.3px;
+        color: #223645;
+        font-family: Poppins, sans-serif;
+        font-weight: 600;
+    }
+
+    &__menu {
+        float: right;
+    }
+
+    &__menu .nav.nav-pills {
+        border: 2px solid #eae7ff;
+        border-radius: 40px;
+        background-color: #fff;
+    }
+
+    &__menu .nav-item .active {
+        background: #e12454;
+        border-radius: 40px;
+        padding-left: 50px;
+        transform: scale(1.04);
+        color: #fff;
+        font-weight: 500;
+        letter-spacing: 1px;
+        line-height: 1;
+        padding: 30px 50px;
+        text-transform: uppercase;
+        border: none;
+    }
+
+    .nav-item button {
+        font-weight: 500;
+        letter-spacing: 1px;
+        line-height: 1;
+        padding: 30px 50px;
+        text-transform: uppercase;
+        color: #223645;
+        background: transparent;
+        border: none;
+        border-radius: 0;
+        font-family: Poppins, sans-serif;
+        font-weight: 500px;
+    }
+}
