@@ -1,5 +1,6 @@
 import React from 'react'
 import './HomeSecondAvail.scss'
+import SliceButton from '../SliceButton/SliceButton'
 
 function HomeSecondAvail() {
     return (
@@ -12,9 +13,11 @@ function HomeSecondAvail() {
                                 <h5 className='availSecond__title--grey'>Stay healthy & strong to enjoy life</h5>
                                 <h1 className='availSecond__title--white'>Trust Us To Be There To Help All & Make Things Well Again.</h1>
                             </div>
+                            <div className='availSecond_btn'>
+                                <SliceButton content="get a consultant" color="green" />
+                            </div>
                         </div>
-                        <div className="availSecond__button">
-                        </div>
+
                     </div>
                 </div>
             </div>

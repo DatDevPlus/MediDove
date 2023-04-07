@@ -26,6 +26,7 @@
         color: #223645;
         font-family: Poppins, sans-serif;
         margin-top: 0;
+        font-weight: 600;
     }
 
     &__text--black {
@@ -40,7 +41,18 @@
         margin-bottom: 120px;
     }
 
-    .btn {
+    &__btn {
         float: right;
+        padding-top: 80px;
+        text-align: right;
+        margin-left: 0px;
+
+    }
+
+    &__btn {
+        float: right;
+        margin-bottom: 30px;
+        margin-top: -90px;
+
     }
 }

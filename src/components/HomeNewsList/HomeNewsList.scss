@@ -19,6 +19,14 @@
         margin-top: 0;
     }
 
+    &__info h3 a:hover {
+        color: #e12454 !important;
+    }
+
+    &__infolast h3 a:hover {
+        color: #e12454 !important;
+    }
+
     &__infolast h3 {
         font-size: 22px;
         line-height: 1.3;
@@ -44,6 +52,4 @@
         margin-right: 5px;
         top: -3px;
     }
-
-
 }

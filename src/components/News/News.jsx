@@ -3,6 +3,7 @@ import './News.scss'
 import HomeNewsLeftSide from '../HomeNewsLeftSide/HomeNewsLeftSide'
 import HomeNewsRightSide from '../HomeNewsRightSide/HomeNewsRightSide'
 import HomeNewsList from '../HomeNewsList/HomeNewsList'
+import SliceButton from '../SliceButton/SliceButton'
 
 function News() {
     return (
@@ -25,9 +26,8 @@ function News() {
                     </div>
 
                     <div className="col-xl-6 col-lg-5">
-                        <div className="btn">
-                            <a to="" className="btn">
-                                <span>+</span>our blog</a>
+                        <div className='news__btn'>
+                            <SliceButton content="our blog" color="pink" />
                         </div>
                     </div>
                 </div>
@@ -38,9 +38,8 @@ function News() {
                         <div className="news__list">
                             <HomeNewsList />
                         </div>
-                        <div className="mk-call-btn f-right mb-30">
-                            <a to="" className="btn">
-                                <span></span>make call</a>
+                        <div className="news__btn">
+                            <SliceButton content="make call" color="green" />
                         </div>
                     </div>
                 </div>
